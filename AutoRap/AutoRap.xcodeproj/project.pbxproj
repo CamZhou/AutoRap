@@ -18,7 +18,6 @@
 		743ACFAA1BF6F0FF00B59448 /* RapGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743ACFA91BF6F0FF00B59448 /* RapGenerator.swift */; settings = {ASSET_TAGS = (); }; };
 		743ACFAC1BF7017600B59448 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743ACFAB1BF7017600B59448 /* AudioToolbox.framework */; };
 		743ACFAE1BF7018100B59448 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743ACFAD1BF7018100B59448 /* AVFoundation.framework */; };
-		743ACFB01BF701B700B59448 /* Framework in Resources */ = {isa = PBXBuildFile; fileRef = 743ACFAF1BF701B700B59448 /* Framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +55,6 @@
 		743ACFA91BF6F0FF00B59448 /* RapGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RapGenerator.swift; sourceTree = "<group>"; };
 		743ACFAB1BF7017600B59448 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		743ACFAD1BF7018100B59448 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		743ACFAF1BF701B700B59448 /* Framework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Framework; sourceTree = "<group>"; };
-		743ACFB11BF708BD00B59448 /* Objective-C_Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-C_Bridge.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,14 +111,12 @@
 			children = (
 				743ACF781BF6EA0D00B59448 /* AppDelegate.swift */,
 				743ACF7A1BF6EA0D00B59448 /* ViewController.swift */,
-				743ACFB11BF708BD00B59448 /* Objective-C_Bridge.h */,
 				743ACF7C1BF6EA0D00B59448 /* Main.storyboard */,
 				743ACFA91BF6F0FF00B59448 /* RapGenerator.swift */,
 				743ACF821BF6EA0D00B59448 /* Assets.xcassets */,
 				743ACF841BF6EA0D00B59448 /* LaunchScreen.storyboard */,
 				743ACF871BF6EA0D00B59448 /* Info.plist */,
 				743ACF7F1BF6EA0D00B59448 /* AutoRap.xcdatamodeld */,
-				743ACFAF1BF701B700B59448 /* Framework */,
 			);
 			path = AutoRap;
 			sourceTree = "<group>";
@@ -250,7 +245,6 @@
 				743ACF861BF6EA0D00B59448 /* LaunchScreen.storyboard in Resources */,
 				743ACF831BF6EA0D00B59448 /* Assets.xcassets in Resources */,
 				743ACF7E1BF6EA0D00B59448 /* Main.storyboard in Resources */,
-				743ACFB01BF701B700B59448 /* Framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +414,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AutoRap/Framework",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = AutoRap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Cameric.AutoRap;
@@ -431,6 +430,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AutoRap/Framework",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = AutoRap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Cameric.AutoRap;

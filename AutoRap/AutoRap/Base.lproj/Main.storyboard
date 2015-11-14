@@ -28,7 +28,7 @@
                                 <animations/>
                                 <state key="normal" title="AutoRap"/>
                                 <connections>
-                                    <action selector="autoRap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f61-xF-4Zg"/>
+                                    <action selector="autoRapWithVoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ih1-y7-5Yb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -36,7 +36,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="autoRap" destination="P1f-NQ-ljp" id="pJ5-Dj-ugh"/>
                         <outlet property="display_" destination="QKX-Vp-ePl" id="p1J-Wi-GG6"/>
                     </connections>
                 </viewController>

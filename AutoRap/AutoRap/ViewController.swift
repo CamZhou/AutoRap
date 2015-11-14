@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import AVFoundation
 
 
 class ViewController: UIViewController {
 
     @IBOutlet var display_: UITextView!
+    let synth = AVSpeechSynthesizer()
+    var myUtterance = AVSpeechUtterance(string: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        display_.editable = false;
+        display_.scrollEnabled = true;
         
         let welcomeString = "Yo! Give me a word."
         displayLyrics(welcomeString)
@@ -26,22 +32,31 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func autoRap(sender: AnyObject) {
-        // Get the keyword
-        var oeGenerator = OELanguageModelGenerator()
-        
+    @IBAction func autoRapWithVoice(sender: AnyObject) {
+        let keyword = "hahhahahahahahah haha hahahahaha"
+        for char in keyword.componentsSeparatedByString(" ") {
+            autoRap(String(char))
+        }
+    }
+    
+    func autoRap(keyword: String) {
         // Generate lyrics
         let rapGenerator = RapGenerator()
-        let keyword = "Something"
         let lyrics = rapGenerator.generateLyrics(keyword)
         
         // Sythesize voice
+        myUtterance = AVSpeechUtterance(string: lyrics)
+        configUtterance()
+        synth.speakUtterance(myUtterance)
         
         // Display lyrics
         displayLyrics(lyrics)
-        
-        
-        
+    }
+    
+    func configUtterance() {
+        myUtterance.pitchMultiplier = 0.5 + Float(drand48()) * 1.5
+        myUtterance.rate = AVSpeechUtteranceMinimumSpeechRate + Float(drand48()) * AVSpeechUtteranceMaximumSpeechRate
+        myUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
     }
     
     func displayUserInput(input: String){
