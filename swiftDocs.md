@@ -16,3 +16,6 @@ func shell(args: String...) -> Int32 {
 }
 
 shell("ls")```
+
+
+```let randomInt = Int(arc4random_uniform(UInt32(sentList.count)))```
