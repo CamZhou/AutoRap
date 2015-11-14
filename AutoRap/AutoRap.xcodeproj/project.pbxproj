@@ -57,6 +57,7 @@
 		743ACFAB1BF7017600B59448 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		743ACFAD1BF7018100B59448 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		743ACFAF1BF701B700B59448 /* Framework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Framework; sourceTree = "<group>"; };
+		743ACFB11BF708BD00B59448 /* Objective-C_Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-C_Bridge.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 			children = (
 				743ACF781BF6EA0D00B59448 /* AppDelegate.swift */,
 				743ACF7A1BF6EA0D00B59448 /* ViewController.swift */,
+				743ACFB11BF708BD00B59448 /* Objective-C_Bridge.h */,
 				743ACF7C1BF6EA0D00B59448 /* Main.storyboard */,
 				743ACFA91BF6F0FF00B59448 /* RapGenerator.swift */,
 				743ACF821BF6EA0D00B59448 /* Assets.xcassets */,

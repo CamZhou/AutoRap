@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet var display_: UITextView!
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
 
     @IBAction func autoRap(sender: AnyObject) {
         // Get the keyword
-        
+        var oeGenerator = OELanguageModelGenerator()
         
         // Generate lyrics
         let rapGenerator = RapGenerator()
