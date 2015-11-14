@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "04EBF79037625E7331295ECEDC5523021B8B1EDF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "04EBF79037625E7331295ECEDC5523021B8B1EDF" : 0,
+    "CE31FB7ED082D131E9CBB0D02B94CF38C0F9DBC3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3B259831-D6F3-48A5-80B0-B77B9FDA1198",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "04EBF79037625E7331295ECEDC5523021B8B1EDF" : "AutoRap\/",
+    "CE31FB7ED082D131E9CBB0D02B94CF38C0F9DBC3" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AutoRap",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AutoRap\/AutoRap.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CamZhou\/AutoRap.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "04EBF79037625E7331295ECEDC5523021B8B1EDF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CamZhou\/SimulTubeClient.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CE31FB7ED082D131E9CBB0D02B94CF38C0F9DBC3"
+    }
+  ]
+}
