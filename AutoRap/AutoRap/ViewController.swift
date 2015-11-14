@@ -28,13 +28,22 @@ class ViewController: UIViewController {
         display_.editable = false;
         display_.scrollEnabled = true;
         
-        let welcomeString = "Yo! Give me a word."
+        let welcomeString = "Let's rap."
         displayLyrics(welcomeString)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func fun(sender: UIButton) {
+        let ha = "Hahahahahahahahahahaha hahahahahahahahahahahahahahahahahahahaha Hahahahahaha Hahaha haha ha hahahaha Ha Hehe"
+        for word in ha.componentsSeparatedByString(" ") {
+            myUtterance = AVSpeechUtterance(string: word)
+            configUtterance()
+            synth.speakUtterance(myUtterance)
+        }
     }
     
     @IBAction func autoRapWithTopic(sender: UIButton) {
