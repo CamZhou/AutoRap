@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,14 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QKX-Vp-ePl">
-                                <rect key="frame" x="20" y="28" width="560" height="249"/>
-                                <animations/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1f-NQ-ljp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1f-NQ-ljp">
                                 <rect key="frame" x="521" y="550" width="59" height="30"/>
                                 <animations/>
                                 <state key="normal" title="AutoRap"/>
@@ -31,7 +26,7 @@
                                     <action selector="autoRapWithVoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rJ-pw-5S4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA5-an-Dve">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA5-an-Dve">
                                 <rect key="frame" x="20" y="550" width="97" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Donald Trump"/>
@@ -39,15 +34,7 @@
                                     <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQp-tu-iVv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8O7-dd-jN5">
-                                <rect key="frame" x="20" y="512" width="89" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Shakespeare"/>
-                                <connections>
-                                    <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRS-Vf-Byn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyv-yH-2Uq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyv-yH-2Uq">
                                 <rect key="frame" x="20" y="474" width="55" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Eminem"/>
@@ -55,7 +42,7 @@
                                     <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlC-Yi-jRn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjc-d3-NSq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjc-d3-NSq">
                                 <rect key="frame" x="20" y="436" width="141" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Brief History of Time"/>
@@ -63,7 +50,7 @@
                                     <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fH1-FJ-SCx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE3-dL-Hft">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE3-dL-Hft">
                                 <rect key="frame" x="20" y="398" width="35" height="30"/>
                                 <animations/>
                                 <state key="normal" title="1984"/>
@@ -71,15 +58,68 @@
                                     <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xvl-lk-6ZR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8O7-dd-jN5">
+                                <rect key="frame" x="20" y="512" width="89" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Shakespeare"/>
+                                <connections>
+                                    <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRS-Vf-Byn"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QKX-Vp-ePl">
+                                <rect key="frame" x="20" y="20" width="560" height="370"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="370" id="ZCn-1P-IRh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifu-d7-YzE">
+                                <rect key="frame" x="541" y="512" width="39" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Beats"/>
+                                <connections>
+                                    <action selector="playBeats" destination="BYZ-38-t0r" eventType="touchUpInside" id="EOi-yG-4JQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="fA5-an-Dve" firstAttribute="top" secondItem="8O7-dd-jN5" secondAttribute="bottom" constant="8" id="1TK-bE-YZi"/>
+                            <constraint firstItem="QKX-Vp-ePl" firstAttribute="leading" secondItem="WE3-dL-Hft" secondAttribute="leading" id="8Cr-Cw-cBd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fA5-an-Dve" secondAttribute="bottom" constant="20" id="90t-Me-QiK"/>
+                            <constraint firstItem="P1f-NQ-ljp" firstAttribute="top" secondItem="ifu-d7-YzE" secondAttribute="bottom" constant="8" id="Eyd-ye-yQ1"/>
+                            <constraint firstItem="8O7-dd-jN5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="L8d-su-1gX"/>
+                            <constraint firstItem="kyv-yH-2Uq" firstAttribute="top" secondItem="Vjc-d3-NSq" secondAttribute="bottom" constant="8" id="Oy4-Cs-xAS"/>
+                            <constraint firstItem="WE3-dL-Hft" firstAttribute="top" secondItem="QKX-Vp-ePl" secondAttribute="bottom" constant="8" symbolic="YES" id="QMW-Dh-k74"/>
+                            <constraint firstItem="ifu-d7-YzE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bwS-Vq-pfr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P1f-NQ-ljp" secondAttribute="bottom" constant="20" id="fS2-gK-h4a"/>
+                            <constraint firstItem="8O7-dd-jN5" firstAttribute="top" secondItem="kyv-yH-2Uq" secondAttribute="bottom" constant="8" id="geS-m0-eus"/>
+                            <constraint firstItem="P1f-NQ-ljp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hrq-cC-5TW"/>
+                            <constraint firstItem="WE3-dL-Hft" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iBY-PI-cIO"/>
+                            <constraint firstItem="Vjc-d3-NSq" firstAttribute="top" secondItem="WE3-dL-Hft" secondAttribute="bottom" constant="8" id="ilH-bO-BhN"/>
+                            <constraint firstItem="QKX-Vp-ePl" firstAttribute="trailing" secondItem="P1f-NQ-ljp" secondAttribute="trailing" id="kld-Yd-vAC"/>
+                            <constraint firstItem="kyv-yH-2Uq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="r1v-Rv-STa"/>
+                            <constraint firstItem="Vjc-d3-NSq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rdX-dO-ZZb"/>
+                            <constraint firstItem="fA5-an-Dve" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="v9y-wy-BgC"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Iz8-8w-7oT" appends="YES" id="iC4-ci-yf9"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="display_" destination="QKX-Vp-ePl" id="p1J-Wi-GG6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Iz8-8w-7oT">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="zy3-LB-15R"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="273" y="345"/>
         </scene>
