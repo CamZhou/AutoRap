@@ -10,6 +10,7 @@ import Foundation
 
 
 class RapGenerator {
+    
     func generateLyrics(keyword: String) -> String {
         let lyrics = keyword
         return lyrics

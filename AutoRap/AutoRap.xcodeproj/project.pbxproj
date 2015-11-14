@@ -16,6 +16,9 @@
 		743ACF911BF6EA0D00B59448 /* AutoRapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743ACF901BF6EA0D00B59448 /* AutoRapTests.swift */; };
 		743ACF9C1BF6EA0D00B59448 /* AutoRapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743ACF9B1BF6EA0D00B59448 /* AutoRapUITests.swift */; };
 		743ACFAA1BF6F0FF00B59448 /* RapGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743ACFA91BF6F0FF00B59448 /* RapGenerator.swift */; settings = {ASSET_TAGS = (); }; };
+		743ACFAC1BF7017600B59448 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743ACFAB1BF7017600B59448 /* AudioToolbox.framework */; };
+		743ACFAE1BF7018100B59448 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743ACFAD1BF7018100B59448 /* AVFoundation.framework */; };
+		743ACFB01BF701B700B59448 /* Framework in Resources */ = {isa = PBXBuildFile; fileRef = 743ACFAF1BF701B700B59448 /* Framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		743ACF9B1BF6EA0D00B59448 /* AutoRapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoRapUITests.swift; sourceTree = "<group>"; };
 		743ACF9D1BF6EA0D00B59448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		743ACFA91BF6F0FF00B59448 /* RapGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RapGenerator.swift; sourceTree = "<group>"; };
+		743ACFAB1BF7017600B59448 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		743ACFAD1BF7018100B59448 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		743ACFAF1BF701B700B59448 /* Framework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743ACFAE1BF7018100B59448 /* AVFoundation.framework in Frameworks */,
+				743ACFAC1BF7017600B59448 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				743ACF771BF6EA0D00B59448 /* AutoRap */,
+				743ACFAD1BF7018100B59448 /* AVFoundation.framework */,
+				743ACFAB1BF7017600B59448 /* AudioToolbox.framework */,
 				743ACF8F1BF6EA0D00B59448 /* AutoRapTests */,
 				743ACF9A1BF6EA0D00B59448 /* AutoRapUITests */,
 				743ACF761BF6EA0D00B59448 /* Products */,
@@ -109,6 +119,7 @@
 				743ACF841BF6EA0D00B59448 /* LaunchScreen.storyboard */,
 				743ACF871BF6EA0D00B59448 /* Info.plist */,
 				743ACF7F1BF6EA0D00B59448 /* AutoRap.xcdatamodeld */,
+				743ACFAF1BF701B700B59448 /* Framework */,
 			);
 			path = AutoRap;
 			sourceTree = "<group>";
@@ -237,6 +248,7 @@
 				743ACF861BF6EA0D00B59448 /* LaunchScreen.storyboard in Resources */,
 				743ACF831BF6EA0D00B59448 /* Assets.xcassets in Resources */,
 				743ACF7E1BF6EA0D00B59448 /* Main.storyboard in Resources */,
+				743ACFB01BF701B700B59448 /* Framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +503,7 @@
 				743ACFA21BF6EA0D00B59448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		743ACFA31BF6EA0D00B59448 /* Build configuration list for PBXNativeTarget "AutoRapTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +512,7 @@
 				743ACFA51BF6EA0D00B59448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		743ACFA61BF6EA0D00B59448 /* Build configuration list for PBXNativeTarget "AutoRapUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +521,7 @@
 				743ACFA81BF6EA0D00B59448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

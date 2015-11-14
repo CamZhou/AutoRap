@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let welcomeString = "Yo! Give me a word."
+        displayLyrics(welcomeString)
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +25,30 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func autoRap(sender: AnyObject) {
+        // Get the keyword
+        
+        
+        // Generate lyrics
+        let rapGenerator = RapGenerator()
+        let keyword = "Something"
+        let lyrics = rapGenerator.generateLyrics(keyword)
+        
+        // Sythesize voice
+        
+        // Display lyrics
+        displayLyrics(lyrics)
+        
+        
+        
+    }
+    
+    func displayUserInput(input: String){
+        display_.text = display_.text + input
+    }
+    
+    func displayLyrics(input: String){
+        display_.text = display_.text + input
+    }
 }
 
