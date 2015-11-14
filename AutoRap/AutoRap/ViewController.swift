@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var display_: UITextView!
     let synth = AVSpeechSynthesizer()
     var myUtterance = AVSpeechUtterance(string: "")
+    var rapGenerator = RapGenerator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,16 +33,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func autoRapWithVoice(sender: AnyObject) {
+    @IBAction func autoRapWithVoice(sender: UIButton) {
         let keyword = "hahhahahahahahah haha hahahahaha"
-        for char in keyword.componentsSeparatedByString(" ") {
-            autoRap(String(char))
-        }
+        autoRap(keyword)
+    }
+    @IBAction func autoRapWithTopic(sender: UIButton) {
+        let keyword = sender.accessibilityIdentifier
+        autoRap(keyword!)
     }
     
     func autoRap(keyword: String) {
         // Generate lyrics
-        let rapGenerator = RapGenerator()
         let lyrics = rapGenerator.generateLyrics(keyword)
         
         // Sythesize voice

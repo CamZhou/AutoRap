@@ -17,18 +17,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QKX-Vp-ePl">
-                                <rect key="frame" x="20" y="28" width="560" height="514"/>
+                                <rect key="frame" x="20" y="28" width="560" height="249"/>
                                 <animations/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1f-NQ-ljp">
-                                <rect key="frame" x="271" y="550" width="59" height="30"/>
+                                <rect key="frame" x="521" y="550" width="59" height="30"/>
                                 <animations/>
                                 <state key="normal" title="AutoRap"/>
                                 <connections>
-                                    <action selector="autoRapWithVoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ih1-y7-5Yb"/>
+                                    <action selector="autoRapWithVoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rJ-pw-5S4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA5-an-Dve">
+                                <rect key="frame" x="20" y="550" width="97" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Donald Trump"/>
+                                <connections>
+                                    <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQp-tu-iVv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8O7-dd-jN5">
+                                <rect key="frame" x="20" y="512" width="89" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Shakespeare"/>
+                                <connections>
+                                    <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRS-Vf-Byn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyv-yH-2Uq">
+                                <rect key="frame" x="20" y="474" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Eminem"/>
+                                <connections>
+                                    <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlC-Yi-jRn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjc-d3-NSq">
+                                <rect key="frame" x="20" y="436" width="141" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Brief History of Time"/>
+                                <connections>
+                                    <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fH1-FJ-SCx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE3-dL-Hft">
+                                <rect key="frame" x="20" y="398" width="35" height="30"/>
+                                <animations/>
+                                <state key="normal" title="1984"/>
+                                <connections>
+                                    <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xvl-lk-6ZR"/>
                                 </connections>
                             </button>
                         </subviews>
