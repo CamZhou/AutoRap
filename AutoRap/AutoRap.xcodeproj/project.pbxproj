@@ -15,6 +15,7 @@
 		743ACF861BF6EA0D00B59448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743ACF841BF6EA0D00B59448 /* LaunchScreen.storyboard */; };
 		743ACF911BF6EA0D00B59448 /* AutoRapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743ACF901BF6EA0D00B59448 /* AutoRapTests.swift */; };
 		743ACF9C1BF6EA0D00B59448 /* AutoRapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743ACF9B1BF6EA0D00B59448 /* AutoRapUITests.swift */; };
+		743ACFAA1BF6F0FF00B59448 /* RapGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743ACFA91BF6F0FF00B59448 /* RapGenerator.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		743ACF971BF6EA0D00B59448 /* AutoRapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoRapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		743ACF9B1BF6EA0D00B59448 /* AutoRapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoRapUITests.swift; sourceTree = "<group>"; };
 		743ACF9D1BF6EA0D00B59448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743ACFA91BF6F0FF00B59448 /* RapGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RapGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				743ACF781BF6EA0D00B59448 /* AppDelegate.swift */,
 				743ACF7A1BF6EA0D00B59448 /* ViewController.swift */,
 				743ACF7C1BF6EA0D00B59448 /* Main.storyboard */,
+				743ACFA91BF6F0FF00B59448 /* RapGenerator.swift */,
 				743ACF821BF6EA0D00B59448 /* Assets.xcassets */,
 				743ACF841BF6EA0D00B59448 /* LaunchScreen.storyboard */,
 				743ACF871BF6EA0D00B59448 /* Info.plist */,
@@ -261,6 +264,7 @@
 				743ACF7B1BF6EA0D00B59448 /* ViewController.swift in Sources */,
 				743ACF791BF6EA0D00B59448 /* AppDelegate.swift in Sources */,
 				743ACF811BF6EA0D00B59448 /* AutoRap.xcdatamodeld in Sources */,
+				743ACFAA1BF6F0FF00B59448 /* RapGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
