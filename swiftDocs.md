@@ -15,5 +15,4 @@ func shell(args: String...) -> Int32 {
     return task.terminationStatus
 }
 
-shell("ls")
-```
+shell("ls")```
