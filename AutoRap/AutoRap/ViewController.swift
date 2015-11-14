@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     var rapGenerator = RapGenerator()
     var audioPlayer = AVAudioPlayer()
     
-    var rateMultiplier = 0.5
+//    var nextRate = AVSpeechUtteranceDefaultSpeechRate
+//    var nextPitch = Float(1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,14 +36,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func autoRapWithVoice(sender: UIButton) {
-        let keyword = "Fernando is a song by the Swedish pop group ABBA. It was the group's first non-album single and was released in March 1976 through Polar Music. Solo parts were sung by Anni-Frid Lyngstad. The track was featured on the 1976 compilation album Greatest Hits in some countries, although in Australia and New Zealand, Fernando was included on the group's fourth studio album Arrival. Fernando is also featured on the multi-million selling Gold: Greatest Hits compilation. The song was to become ABBA's best-selling single of all time, with 6,000,000 copies sold in 1976 alone.[1] It is one of less than forty all-time singles to have sold 10 million (or more) physical copies worldwide."
-        autoRap(keyword)
-    }
     
     @IBAction func autoRapWithTopic(sender: UIButton) {
-        let keyword = sender.accessibilityIdentifier
+        let keyword = sender.currentTitle
         autoRap(keyword!)
     }
     
@@ -54,14 +50,26 @@ class ViewController: UIViewController {
         displayLyrics(lyrics)
         playBeats()
         
-        for char in lyrics.componentsSeparatedByString(" ") {
-            // Sythesize voice
-            myUtterance = AVSpeechUtterance(string: char)
-            configUtterance()
-            synth.speakUtterance(myUtterance)
-            
+        var str = ""
+        for word in lyrics.componentsSeparatedByString(" ") {
+            str += word
+            let lastChar = word.characters.last
+            if lastChar == "." || lastChar == "," || lastChar == "?" || lastChar == "!" || lastChar == ";" {
+                // Sythesize voice
+                myUtterance = AVSpeechUtterance(string: str)
+                str = ""
+                configUtterance()
+                synth.speakUtterance(myUtterance)
+            }
         }
-        
+    }
+    
+    func configUtterance() {
+        myUtterance.postUtteranceDelay = 0.0
+        myUtterance.preUtteranceDelay = 0.0
+        myUtterance.rate = 0.2
+        myUtterance.pitchMultiplier = 0.5 + 1.5 * Float(drand48())
+        myUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
     }
     
     @IBAction func playBeats() {
@@ -77,29 +85,20 @@ class ViewController: UIViewController {
         audioPlayer.play()
     }
     
-    func configUtterance() {
-        myUtterance.postUtteranceDelay = 0.0
-        myUtterance.preUtteranceDelay = 0.0
-        myUtterance.pitchMultiplier = 0.5 + Float(drand48()) * 1.5
-        myUtterance.rate = AVSpeechUtteranceMinimumSpeechRate + AVSpeechUtteranceMaximumSpeechRate - AVSpeechUtteranceMinimumSpeechRate * Float(rateMultiplier)
-        myUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-    }
-    
     func displayUserInput(input: String){
-        display_.text = display_.text + "\n" + input
+        display_.text = display_.text + "\n\n" + input
     }
     
     func displayLyrics(input: String){
-        display_.text = display_.text + "\n" + input
+        display_.text = display_.text + "\n\n" + input
     }
     
     @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
-        let translation = recognizer.translationInView(self.view)
-        if let view = recognizer.view {
-            view.center = CGPoint(x:view.center.x + translation.x,
-                y:view.center.y + translation.y)
-        }
-        recognizer.setTranslation(CGPointZero, inView: self.view)
+//        let translation = recognizer.translationInView(self.view)
+//        displayLyrics(String(nextPitch))
+//        nextRate = min(AVSpeechUtteranceMaximumSpeechRate, max(AVSpeechUtteranceMinimumSpeechRate, nextRate + Float(translation.x) / 100.0))
+//        nextPitch = min(2, max(0.5, nextPitch + Float(translation.y) / 100.0))
+//        recognizer.setTranslation(CGPointZero, inView: self.view)
     }
 }
 

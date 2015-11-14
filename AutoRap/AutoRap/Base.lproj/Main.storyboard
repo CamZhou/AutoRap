@@ -18,17 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1f-NQ-ljp">
-                                <rect key="frame" x="521" y="550" width="59" height="30"/>
-                                <animations/>
-                                <state key="normal" title="AutoRap"/>
-                                <connections>
-                                    <action selector="autoRapWithVoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rJ-pw-5S4"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA5-an-Dve">
                                 <rect key="frame" x="20" y="550" width="97" height="30"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" identifier="0"/>
                                 <state key="normal" title="Donald Trump"/>
                                 <connections>
                                     <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQp-tu-iVv"/>
@@ -37,30 +30,25 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyv-yH-2Uq">
                                 <rect key="frame" x="20" y="474" width="55" height="30"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" identifier="2"/>
                                 <state key="normal" title="Eminem"/>
                                 <connections>
                                     <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlC-Yi-jRn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjc-d3-NSq">
-                                <rect key="frame" x="20" y="436" width="141" height="30"/>
+                                <rect key="frame" x="20" y="436" width="68" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Brief History of Time"/>
+                                <accessibility key="accessibilityConfiguration" identifier="3"/>
+                                <state key="normal" title="Notorious"/>
                                 <connections>
                                     <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fH1-FJ-SCx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE3-dL-Hft">
-                                <rect key="frame" x="20" y="398" width="35" height="30"/>
-                                <animations/>
-                                <state key="normal" title="1984"/>
-                                <connections>
-                                    <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xvl-lk-6ZR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8O7-dd-jN5">
                                 <rect key="frame" x="20" y="512" width="89" height="30"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <state key="normal" title="Shakespeare"/>
                                 <connections>
                                     <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRS-Vf-Byn"/>
@@ -75,8 +63,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE3-dL-Hft">
+                                <rect key="frame" x="20" y="398" width="41" height="30"/>
+                                <animations/>
+                                <accessibility key="accessibilityConfiguration" identifier="4"/>
+                                <state key="normal" title="JAY-Z"/>
+                                <connections>
+                                    <action selector="autoRapWithTopic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xvl-lk-6ZR"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifu-d7-YzE">
-                                <rect key="frame" x="541" y="512" width="39" height="30"/>
+                                <rect key="frame" x="541" y="550" width="39" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Beats"/>
                                 <connections>
@@ -89,21 +86,20 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="fA5-an-Dve" firstAttribute="top" secondItem="8O7-dd-jN5" secondAttribute="bottom" constant="8" id="1TK-bE-YZi"/>
+                            <constraint firstItem="ifu-d7-YzE" firstAttribute="baseline" secondItem="fA5-an-Dve" secondAttribute="baseline" id="710-8b-rNM"/>
                             <constraint firstItem="QKX-Vp-ePl" firstAttribute="leading" secondItem="WE3-dL-Hft" secondAttribute="leading" id="8Cr-Cw-cBd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fA5-an-Dve" secondAttribute="bottom" constant="20" id="90t-Me-QiK"/>
-                            <constraint firstItem="P1f-NQ-ljp" firstAttribute="top" secondItem="ifu-d7-YzE" secondAttribute="bottom" constant="8" id="Eyd-ye-yQ1"/>
                             <constraint firstItem="8O7-dd-jN5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="L8d-su-1gX"/>
                             <constraint firstItem="kyv-yH-2Uq" firstAttribute="top" secondItem="Vjc-d3-NSq" secondAttribute="bottom" constant="8" id="Oy4-Cs-xAS"/>
                             <constraint firstItem="WE3-dL-Hft" firstAttribute="top" secondItem="QKX-Vp-ePl" secondAttribute="bottom" constant="8" symbolic="YES" id="QMW-Dh-k74"/>
+                            <constraint firstItem="ifu-d7-YzE" firstAttribute="trailing" secondItem="QKX-Vp-ePl" secondAttribute="trailing" id="b6C-L2-55F"/>
                             <constraint firstItem="ifu-d7-YzE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bwS-Vq-pfr"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P1f-NQ-ljp" secondAttribute="bottom" constant="20" id="fS2-gK-h4a"/>
                             <constraint firstItem="8O7-dd-jN5" firstAttribute="top" secondItem="kyv-yH-2Uq" secondAttribute="bottom" constant="8" id="geS-m0-eus"/>
-                            <constraint firstItem="P1f-NQ-ljp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hrq-cC-5TW"/>
                             <constraint firstItem="WE3-dL-Hft" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iBY-PI-cIO"/>
                             <constraint firstItem="Vjc-d3-NSq" firstAttribute="top" secondItem="WE3-dL-Hft" secondAttribute="bottom" constant="8" id="ilH-bO-BhN"/>
-                            <constraint firstItem="QKX-Vp-ePl" firstAttribute="trailing" secondItem="P1f-NQ-ljp" secondAttribute="trailing" id="kld-Yd-vAC"/>
                             <constraint firstItem="kyv-yH-2Uq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="r1v-Rv-STa"/>
                             <constraint firstItem="Vjc-d3-NSq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rdX-dO-ZZb"/>
+                            <constraint firstItem="QKX-Vp-ePl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tQh-Ui-LMP"/>
                             <constraint firstItem="fA5-an-Dve" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="v9y-wy-BgC"/>
                         </constraints>
                         <connections>

@@ -9,9 +9,17 @@
 import Foundation
 
 class fileReader {
-    func readFile(fileName: String) -> [String] {
+    func readMultipleFiles(i: Int) -> String {
+        return readFile("MARKOV/DT_00")
+    }
+    
+    func readFile(fileName: String) -> String {
         let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "txt")
-        let text = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: ErrorType.self)
-        return text.componentsSeparatedByString(" ")
+        do {
+            let text = try NSString(contentsOfFile: path!, encoding: NSUTF8StringEncoding)
+            return text as String
+        }
+        catch {/* error handling here */}
+        return "No such file exists"
     }
 }

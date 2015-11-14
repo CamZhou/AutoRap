@@ -20,6 +20,7 @@
 		743ACFAE1BF7018100B59448 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743ACFAD1BF7018100B59448 /* AVFoundation.framework */; };
 		743ACFBD1BF72DC000B59448 /* io.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743ACFBC1BF72DC000B59448 /* io.swift */; settings = {ASSET_TAGS = (); }; };
 		743ACFBF1BF74C1900B59448 /* Loops in Resources */ = {isa = PBXBuildFile; fileRef = 743ACFBE1BF74C1900B59448 /* Loops */; settings = {ASSET_TAGS = (); }; };
+		743ACFC31BF7732A00B59448 /* MARKOV in Resources */ = {isa = PBXBuildFile; fileRef = 743ACFC21BF7732A00B59448 /* MARKOV */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		743ACFAD1BF7018100B59448 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		743ACFBC1BF72DC000B59448 /* io.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = io.swift; sourceTree = "<group>"; };
 		743ACFBE1BF74C1900B59448 /* Loops */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Loops; sourceTree = "<group>"; };
+		743ACFC21BF7732A00B59448 /* MARKOV */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MARKOV; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				743ACF841BF6EA0D00B59448 /* LaunchScreen.storyboard */,
 				743ACF871BF6EA0D00B59448 /* Info.plist */,
 				743ACF7F1BF6EA0D00B59448 /* AutoRap.xcdatamodeld */,
+				743ACFC21BF7732A00B59448 /* MARKOV */,
 				743ACFBE1BF74C1900B59448 /* Loops */,
 			);
 			path = AutoRap;
@@ -249,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743ACFC31BF7732A00B59448 /* MARKOV in Resources */,
 				743ACF861BF6EA0D00B59448 /* LaunchScreen.storyboard in Resources */,
 				743ACF831BF6EA0D00B59448 /* Assets.xcassets in Resources */,
 				743ACFBF1BF74C1900B59448 /* Loops in Resources */,
