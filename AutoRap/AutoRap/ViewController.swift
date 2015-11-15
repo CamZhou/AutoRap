@@ -38,6 +38,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fun(sender: UIButton) {
+        synth.stopSpeakingAtBoundary(AVSpeechBoundary(rawValue: 0)!)
         let ha = "Hahahahahahahahahahaha hahahahahahahahahahahahahahahahahahahaha Hahahahahaha Hahaha haha ha hahahaha Ha Hehe"
         for word in ha.componentsSeparatedByString(" ") {
             myUtterance = AVSpeechUtterance(string: word)
@@ -52,11 +53,13 @@ class ViewController: UIViewController {
     }
     
     func autoRap(keyword: String) {
+        
         // Generate lyrics
         let lyrics = rapGenerator.generateLyrics(keyword)
         
         // Display lyrics
         displayLyrics(lyrics)
+        synth.stopSpeakingAtBoundary(AVSpeechBoundary(rawValue: 0)!)
         playBeats()
         
         var str = ""
